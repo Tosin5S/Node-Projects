@@ -8,7 +8,7 @@ const port = 5000;
 app.use(express.json());
 app.use('/user', userRouter);
 
-// Replace uri with connection string from mongodb
+// Replace uri with connection string from mongodb atlas
 const uri = "connection string";
 
 
