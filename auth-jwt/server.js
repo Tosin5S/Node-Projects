@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const db = require("./app/models");
+const dbConfig = require("./app/config/db.config");
 
 const Role = db.role;
 const app = express();
@@ -21,6 +22,10 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
     res.json({ message: "Welcome !! "});
 });
+
+// routes
+require("./app/routes/auth.routes")(app);
+require("./app/routes/user.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
