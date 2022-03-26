@@ -1,0 +1,18 @@
+{
+  "name": "sendemails",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tosin5S",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^99.0.0",
+    "nodemailer": "^6.7.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
